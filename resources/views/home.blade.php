@@ -2,7 +2,7 @@
 
 @section('contenido')
 <div class="text" style="margin-bottom: 25px;">
-    <h2 style="text-align: center;">Bienvenido %%</h2>
+    <h2 style="text-align: center;">Bienvenido {{$teacher->name}}</h2>
     <div class="container">
         <div class="row" style="padding-top: 20px;">
             <div class="col-lg-12 offset-lg-0">
