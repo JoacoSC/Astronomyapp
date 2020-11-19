@@ -19,9 +19,10 @@
                 <ul class="nav navbar-nav ml-auto">
 
                     @guest
-                        {{-- Algo --}}
+                    <li class="nav-item"><a class="nav-link active" href="{{ url('/') }}">Bienvenido</a></li>
                     @else    
-                        <li class="nav-item"><a class="nav-link active" href="{{ url('/home') }}">Home</a></li>    
+                        <li class="nav-item"><a class="nav-link active" href="{{ url('/home') }}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="{{ url('/registroEstudiantes') }}">Registrar estudiantes</a></li>    
                     @endguest
                 </ul>
                 
