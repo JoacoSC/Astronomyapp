@@ -15,6 +15,7 @@
                 <div class="card" style="background: url(&quot;assets/img/marte.jpg&quot;) center / cover no-repeat, rgba(255,255,255,0);border-radius: 20px;border-width: 1px;border-color: rgb(255,255,255);margin-bottom: 15px;box-shadow: 1px 1px 5px rgb(38,38,38);">
                     <div class="card-body" style="background: rgba(0,0,0,0.8);padding: 20px;margin: 0px;border-radius: 20px;border-width: 1px;border-color: rgb(255,255,255);"><img src="assets/img/blackboard.png" width="135px" style="height: 150px;">
                         <h4 class="card-title" style="margin-top: 10px;">Crear clase</h4>
+                        <a href="{{ url('/crearClase') }}" class="stretched-link"></a>
                     </div>
                 </div>
             </div>

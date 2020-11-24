@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 </head>
 
 <body>
@@ -22,6 +24,7 @@
                     <li class="nav-item"><a class="nav-link active" href="{{ url('/') }}">Bienvenido</a></li>
                     @else    
                         <li class="nav-item"><a class="nav-link active" href="{{ url('/home') }}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="{{ url('/editarPerfil') }}">Editar Perfil</a></li>
                         <li class="nav-item"><a class="nav-link active" href="{{ url('/registroEstudiantes') }}">Registrar estudiantes</a></li>    
                     @endguest
                 </ul>
@@ -91,6 +94,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/smoothproducts.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    
 </body>
 
 </html>

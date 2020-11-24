@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8714759014a78c736352481139da8dbc",
+    "content-hash": "fcc9e672ce5df39614aba8248218a5fa",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -836,6 +836,61 @@
                 "url"
             ],
             "time": "2020-09-30T07:37:11+00:00"
+        },
+        {
+            "name": "hexters/ladmin",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hexters/ladmin.git",
+                "reference": "e39a7bf7b30c27afbe544e13793af5221b156b58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hexters/ladmin/zipball/e39a7bf7b30c27afbe544e13793af5221b156b58",
+                "reference": "e39a7bf7b30c27afbe544e13793af5221b156b58",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/ui": "^3.0",
+                "yajra/laravel-datatables-oracle": "~9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Hexters\\Ladmin\\LadminServiceProvider"
+                    ],
+                    "aliases": {
+                        "Ladmin": "Hexters\\Ladmin\\Ladmin"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hexters\\Ladmin\\": "src/"
+                },
+                "files": [
+                    "src/Helpers/function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "saifullah",
+                    "email": "hexters@gmail.com"
+                }
+            ],
+            "description": "Package for handel admin page in laravel",
+            "keywords": [
+                "admin page",
+                "laravel",
+                "laravel admin"
+            ],
+            "time": "2020-11-19T10:54:51+00:00"
         },
         {
             "name": "laravel/framework",
@@ -5110,6 +5165,87 @@
                 }
             ],
             "time": "2020-11-12T00:07:28+00:00"
+        },
+        {
+            "name": "yajra/laravel-datatables-oracle",
+            "version": "v9.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables.git",
+                "reference": "7e45885588225b31a9e7bdf4b04733c44432531c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/7e45885588225b31a9e7bdf4b04733c44432531c",
+                "reference": "7e45885588225b31a9e7bdf4b04733c44432531c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.8.*|^6|^7|^8",
+                "illuminate/filesystem": "5.8.*|^6|^7|^8",
+                "illuminate/http": "5.8.*|^6|^7|^8",
+                "illuminate/support": "5.8.*|^6|^7|^8",
+                "illuminate/view": "5.8.*|^6|^7|^8",
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8"
+            },
+            "suggest": {
+                "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
+                "yajra/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license).",
+                "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
+                "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\DataTablesServiceProvider"
+                    ],
+                    "aliases": {
+                        "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                },
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "jQuery DataTables API for Laravel 4|5|6|7",
+            "keywords": [
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/yajra",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/yajra",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-11-11T07:12:41+00:00"
         }
     ],
     "packages-dev": [
