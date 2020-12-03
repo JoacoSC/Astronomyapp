@@ -1,5 +1,8 @@
 <?php
 
+//abrir la sesion
+/* session_start(); */
+
 $error = array();
 
 $email = validar_input_email($_POST['email']);
@@ -30,9 +33,15 @@ if (empty($error)){
     if (!empty($row)){
         // verify password
         if(password_verify($contraseña, $row['contraseña'])){
+            
+            // create session variable
+            /* $_SESSION['id'] = mysqli_insert_id($con); */
+            $_SESSION['id'] = $row['id'];
             print "Ingresaste correctamente";
             header("location: homeProfesor.php");
             exit();
+        }else{
+            header("location: login.php?fallo=true");
         }
     }else{
         print "No estás registrado!";

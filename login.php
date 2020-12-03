@@ -2,7 +2,7 @@
     session_start();
 
     include 'header.php';
-    include 'helper.php';
+    
 
     $user = array();
 
@@ -43,7 +43,12 @@
                             
                             <input class="form-control" value="<?php if(isset($_POST['email'])) echo $_POST['email']?>" required name="email" type="email" style="height: 25px;margin-bottom: 20px;" placeholder="Email">
                             <input class="form-control" value="<?php if(isset($_POST['contraseña'])) echo $_POST['contraseña']?>" required name="contraseña" type="password" style="height: 25px;margin-bottom: 20px;" placeholder="Contraseña">
-                            
+                            <?php
+                                if(isset($_GET["fallo"]) && $_GET["fallo"] == 'true')
+                                {
+                                    echo "<div style='color:red'>Correo y/o contraseña incorrecta </div>";
+                                }
+                            ?>
                             <button class="btn btn-primary" type="submit" style="margin-top: 10px;">Iniciar sesión</button>
                             </form>
                         </div>

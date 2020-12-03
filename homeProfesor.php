@@ -1,29 +1,28 @@
 <?php 
     session_start();
     include ('header.php');
-    include ('helper.php');
+    
 
     $user = array();
 
     
     if(isset($_SESSION['id'])){
         /* print "entré"; */
-        require ('connection.php');
+        
         $user = get_user_info($con, $_SESSION['id']);
         /* echo $user[0];
         echo isset($user[0]); */
+        /* foreach ($user as $key => $value) {
+            echo "Key: $key; Value: $value\n<br>";
+        } */
     }else{
-        print "no entré";
+        /* print "no entré"; */
     }
 
 ?>
-
-    
-
-
     <section class="clean-block clean-hero" style="color: rgba(0, 0, 0, 0.7);background: url(&quot;assets/img/space/mainBackground.jpg&quot;), #444444;border-color: rgb(255,255,255);">
         <div class="text" style="margin-bottom: 25px;">
-            <h2 style="text-align: center;">Bienvenido <?php echo $user[0]; ?></h2>
+            <h2 style="text-align: center;">Bienvenido <?php echo $user['nombre']; ?></h2>
             <div class="container">
                 <div class="row" style="padding-top: 20px;">
                     <div class="col-lg-12 offset-lg-0">

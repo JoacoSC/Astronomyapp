@@ -20,6 +20,8 @@ function validar_input_email($emailValue){
     return '';
 }
 
+//PUEDO ALMACENAR LOS NOMBRES CON MAYUSCULAS
+
 function get_user_info($con, $id){
     $query = "SELECT nombre, apellido_pat, apellido_mat, rut, email, contraseña, telefono, fecha_nac, region, comuna FROM profesor WHERE id=?";
     $q = mysqli_stmt_init($con);

@@ -60,6 +60,9 @@ $segundoResultado = substr($nombre, 0, 4);
 
 $contraseña = $primerResultado.$segundoResultado;
 
+//Eliminar caracteres especiales
+
+
 /* encriptar contraseña */
 $hashed_pass = password_hash($contraseña, PASSWORD_DEFAULT);
 
@@ -86,12 +89,6 @@ if(empty($error)){
     mysqli_stmt_execute($q);
 
     if(mysqli_stmt_affected_rows($q) == 1){
-
-        // start a new session
-        session_start();
-
-        // create session variable
-        $_SESSION['id'] = mysqli_insert_id($con);
 
         header('location: login.php');
         exit();
