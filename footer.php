@@ -26,6 +26,7 @@
 
     <script src="assets/js/regiones.js"></script>
     <script src="assets/js/checkRut.js"></script>
+    <script src="assets/js/botonesPerfil.js"></script>
 </body>
 
 </html>

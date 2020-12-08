@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 
 <body>
@@ -50,8 +51,9 @@
                         <!-- BOTONES PARA USUARIOS LOGEADOS -->
 
                         <li class="nav-item"><a class="nav-link" href="homeProfesor.php">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Registrar estudiantes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Crear clase</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cursos.php">Cursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Clases</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estudiantes.php">Estudiantes</a></li>
 
                         <!-- DROPDOWN -->
 
@@ -62,8 +64,8 @@
                             ?>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="perfilProfesor.php">Perfil</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="logout.php">Cerrar sesión</a>
                         </div>
                         </div>

@@ -1,0 +1,91 @@
+#section-background{
+    color: rgba(0, 0, 0, 0.7);
+    background: url('../img/space/mainBackground.jpg'), #444444;
+    border-color: rgb(255,255,255);
+}
+
+#BotonEditarNombre {
+    background: url('../img/white_pencil.png') center / contain no-repeat, 
+    #00a3ff;border-radius: 5px;
+    border-color: rgb(0,163,255);
+    height: 20px;
+    width: 35px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px 3px rgb(28,28,28);
+}
+
+#BotonActualizarNombre{
+    background: url('../img/save_changes.png') center / contain no-repeat, #169a6b;
+    border-radius: 5px;
+    border-color: #169a6b;
+    height: 20px;
+    width: 35px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px 3px rgb(28,28,28);
+    display: none;
+}
+
+#BotonCancelarNombre{
+    background: url('../img/cancel.png') center / contain no-repeat, #d5352a;
+    border-radius: 5px;
+    border-color: #d5352a;
+    height: 20px;
+    width: 35px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    box-shadow: 2px 2px 5px 3px rgb(28,28,28);
+    display: none;
+}
+
+#card-1{
+    background: url('../img/jupiter.jpg') center / cover no-repeat, rgba(255,255,255,0);
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgb(255,255,255);
+    margin-bottom: 15px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 5px rgb(74,74,74);
+}
+
+#card-1-body{
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    margin: 0px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgb(255,255,255);
+    box-shadow: 0px 0px;
+}
+
+#img-card{
+    height: 150px;
+    width:135px;
+}
+
+#card-title{
+    margin-top: 10px;
+}
+
+#card-2{
+    background: url('../img/marte.jpg') center / cover no-repeat, rgba(255,255,255,0);
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgb(255,255,255);
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 5px rgb(38,38,38);
+}
+
+#card-2-body{
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    margin: 0px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgb(255,255,255);
+}
+
+.p-editarPerfil{
+    color: rgb(255,255,255);
+    padding-top: 5px;
+    font-weight:bold;
+}

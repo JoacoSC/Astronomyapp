@@ -19,7 +19,7 @@
     
 ?>
 
-    <div style="background: url(&quot;assets/img/space/mainBackground.jpg&quot;) top / cover no-repeat;">
+    <div style="color: rgba(0, 0, 0, 0.7);background: url(&quot;assets/img/space/mainBackground.jpg&quot;) top / cover no-repeat;">
         <div style="background: rgba(0,0,0,0.4); min-height: 700px;">
             <div class="text" style="margin-bottom: 0px;padding: 0px;padding-right: 20px;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;">
                 <h2 style="text-align: center;font-size: 25px;color: rgb(255,255,255);">Iniciar sesión</h2>
